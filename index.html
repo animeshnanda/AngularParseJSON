@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+	<head>
+	
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link href="./style/main.css" rel="stylesheet" type="text/css"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+		<script src="./js/main.js"></script>
+		
+	</head>
+	<body ng-app="demoApp" ng-controller="demoCtrl">
+	
+		<h2>Angular Demo JSON Parsing</h2>
+		
+		<ul>
+		  <li ng-repeat="x in names">
+			{{ x.Name + ', ' + x.Country }}
+		  </li>
+		</ul>
+		
+	</body>
+</html>
